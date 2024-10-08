@@ -94,7 +94,7 @@ def plotar_regressao_linear(dados_acao, simbolo_acao):
     X = dados_acao['Dias'].values.reshape(-1, 1)  # Dias corridos como valor numérico
     y = dados_acao['Close'].values  # Preço de fechamento como variável alvo
 
-    e
+    
     alpha = 0.1  # Parâmetro de regularização (ajuste conforme necessário)
     model = Ridge(alpha=alpha)
     model.fit(X, y)
